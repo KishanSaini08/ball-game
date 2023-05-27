@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: green;
+}
+.box{
+    border: 2px solid;
+    width: 400px;
+    height: 300px;
+    margin: 40px auto;
+    position: relative;
+}
+.box1{
+    border: 2px solid #fff;
+    width: 30px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    top: 109px;
+    left: 0;
+    animation:sample 6s 7 alternate linear;
+}
+.box2{
+    border: 2px solid #fff;
+    width: 30px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    /* left: 267px; */
+    left: 368px;
+    top: 109px;
+    animation:sample2  5s 7 alternate linear;
+}
+.ball{
+    border: 1px solid #fff;
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffff;
+    position: absolute;
+    top: 122px;
+    left: 177px;
+    animation:moveball 3s 7 alternate linear;
+}
+@keyframes moveball{
+    0%{
+        left: 328px;
+    }
+    100%{
+        left:28px;
+    }    
+    }
+    @keyframes sample{
+        0%{
+            top: 109px;
+        }
+        25%{
+            top: 0;
+        }
+        100%{
+            top: 197px;
+        }
+    }
+    @keyframes sample2{
+        0%{
+            top: 109px;
+        }
+        25%{
+            top:197px ;
+        }
+        100%{
+            top: 0;
+        }
+    }
+
+  
+
+
+
